@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>		
+		<link href="assets/css/style.min.css" rel="stylesheet" />
+		<link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	</head>
+	<body>
+	<header>
+<div class="navbar navbar-fixed-top" style="height:130px;">
+	<div class="navbar-inner">
+		<div class="container" style="width:1200px; height:130px;">
+		     <!-- top menu -->			
+				 <ul id="nav">
+				 <a class="brand logo" href="http://www.tricksway.com" alt="Html codes, Javascripts, Css Design" title="Html codes, Javascripts, Css Design">
+			<img src="http://www.tricksway.com/demo/assets/css/logo.png" width="300px; height:130px;" alt="Html codes, Javascripts, Css Design" title="Html codes, Javascripts, Css Design" />
+			</a><a class="brand logo" href="http://www.tricksway.com">
+									<script type="text/javascript"><!--
+google_ad_client = "ca-pub-2479197994239346";
+/* cpanel */
+google_ad_slot = "1154289340";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+			</a>			 <!-- logo -->
+			
+		</div>
+		</div>
+</div>
+</header>
+		<div class="container">
+			<h1 class="fade">Placeholder</h1>
+			<h2 class="fade">Place holder Caret Animation</h2>
+			<p class="fade">Placeholdem is a JavaScript plugin that animates place holder carets on inputs and textareas. The placeholder value will incrementally delete on focus, and restore on blur.</p>
+			<h3 class="fade">Try It</h3>
+			<form>
+				<label class="fade">
+					<input name="field1" placeholder="Triggered on Focus/Blur" />
+					<div class="arrow"></div>
+				</label>
+				<label class="fade">
+					<textarea name="field2" placeholder="Inputs or Textareas"></textarea>
+					<div class="arrow"></div>
+				</label>
+			</form>
+			<h3 class="fade">Get It</h3>
+			<h3 class="fade">Use It</h3>
+			<div class="code-wrap">
+				<pre class="fade"><code><span>&lt;!-- add placeholder to input or textarea --/&gt;</span>
+&lt;input name="fieldname" placeholder="Placeholder Value" /&gt;</code></pre>
+				<pre class="fade"><code><span>// run Placeholdem on all elements with placeholders</span>
+Placeholdem( document.querySelectorAll( '[placeholder]' ) );
+</code></pre>
+			</div>
+		</div>
+		<script src="placeholdem.min.js"></script>
+		<script>
+			Placeholdem( document.querySelectorAll( '[placeholder]' ) );
+
+			var fadeElems = document.body.querySelectorAll( '.fade' ),
+				fadeElemsLength = fadeElems.length,
+				i = 0,
+				interval = 50;
+
+				function incFade() {
+					if( i < fadeElemsLength ) {
+						fadeElems[ i ].className += ' fade-load';
+						i++;
+						setTimeout( incFade, interval );
+					}
+				}
+
+				setTimeout( incFade, interval );
+		</script>
+		
+	</body>
+</html>
